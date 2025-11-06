@@ -71,7 +71,7 @@ Check logs directly.
 
 
 
-### Appendices
+### Appendices 
 1. **This lab is managed by git, to push my lab onto the remote repos.**
 
 so I find it necessary to know sth about git. Here are the basic usage of git:
@@ -252,11 +252,12 @@ Spark is putting calc in the memory. It is a frame of calculating.
 ---
 Little Notes:
 - build image->run_containers based on image ->stop_containers
-In the process, build image write configures;
 
-run_containers do creating virtual machines with names and net and capabilities different.
+   - In the process, build image write configures;
 
-stop_containers do deleting virtual machines.
+   - run_containers do creating virtual machines with names and net and capabilities different.
+
+   - stop_containers do deleting virtual machines.
 
 
 
