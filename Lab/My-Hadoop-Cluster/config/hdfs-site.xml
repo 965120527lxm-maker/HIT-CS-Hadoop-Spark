@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <!-- Replication factor -->
+    <property>
+        <name>dfs.replication</name>
+        <value>3</value>
+    </property>
+
+    <!-- NameNode data -->
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:/root/hdfs/namenode</value>
+    </property>
+
+    <!-- DataNode data -->
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:/root/hdfs/datanode</value>
+    </property>
+
+    <!-- Web UI port -->
+    <property>
+        <name>dfs.namenode.http-address</name>
+        <value>master:9870</value>
+    </property>
+</configuration>
+

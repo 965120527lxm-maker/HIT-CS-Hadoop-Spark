@@ -1,0 +1,31 @@
+version: '3'
+services:
+  master:
+    build: .
+    container_name: master
+    hostname: master
+    ports:
+      - "9870:9870"    # HDFS WebUI
+      - "8088:8088"    # YARN WebUI
+      - "8080:8080"    # Spark WebUI
+      - "7077:7077"    # Spark master
+    networks:
+      - hadoop-net
+
+  worker1:
+    build: .
+    container_name: worker1
+    hostname: worker1
+    networks:
+      - hadoop-net
+
+  worker2:
+    build: .
+    container_name: worker2
+    hostname: worker2
+    networks:
+      - hadoop-net
+
+networks:
+  hadoop-net:
+    driver: bridge
